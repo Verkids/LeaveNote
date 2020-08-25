@@ -1,28 +1,47 @@
+<!--标签在app.vue里渲染-->
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- <LeaveNote></LeaveNote> -->
+    <!--决定被渲染组件的位置-->
+    <router-view v-if="isRouterAlive"></router-view>
+    <!--注册过的全局组件-->
+    <!-- <router-link to="/LeaveNote">主页</router-link>  -->
+    <!-- <router-link to="/Approval">审批界面</router-link> -->
+    <!-- <router-link to="/Login">登录</router-link> -->
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import LeaveNote from './components/LeaveNote.vue'
 
 export default {
   name: 'App',
+    provide () {
+    return {
+      reload: this.reload
+    }
+  },
+  data(){
+    return{
+      isRouterAlive:true
+    }
+  },
+  methods:{
+    reload(){
+      this.isRouterAlive = false
+      this.$nextTick(function(){
+        this.isRouterAlive = true
+      })
+    }
+  },
+
   components: {
-    HelloWorld
+    // 'LeaveNote' : LeaveNote
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+/* @import "../css/base.css"; */
+
 </style>

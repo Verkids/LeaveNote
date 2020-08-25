@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrap_head{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.12);
+}
+.head_con {
+    display: block;
+    width: 100%;
+    height: 72px;
+    margin: 0px auto;
+    position: relative;
+    z-index: 2;
+}
+.headlogin{
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+    margin-left: 27%;
+}
+.banner_area {
+    display: block;
+    width: 100%;
+    position: relative;
+    margin-top: -72px;
+    overflow: hidden;
+}
+.video1 {
+    width: 2560px;
+    height: 803px;
+    position:relative;
+    top: 0;
+    left: 50%;
+    margin-left: -1280px;
+    z-index: 1;
+}
+.function{
+    display: block;
+    width: 350px;
+    height: 501px;
+    position:relative;
+    left: 50%;
+    top: 80%;
+    z-index: 2;
+    -webkit-transform: translate(-50%,-50%);
+    letter-spacing: 3px;
+}
+.contentname{
+    color: white;
+    font-size: 13px;
+    font-family: PingFang SC;
+}
+.leavelist{
+    margin-top: 20px;
+}
+.leavelistsubmit{
+    margin-right: 20px;
+}
+.steps{
+    margin-top: 80px;
+    width: 80%;
+    margin-left: 10%;
+}
+.leave{
+    text-align: center;
+}
+.stepscontainer{
+    text-align: center;
+}
+
+.wrap_head1{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.12);
+    background-color: white;
+}
+.H-head-btnGroup{
+    padding-top: 19px;
+    padding-left: 37%;
+    margin-top: -85px;
+}
+
+/* Login.vue */
+.LoginBg{
+    background:url(../components/img/LoginBg3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.LoginGroup{
+    margin-top: 20%;
+    margin-left: 45%;
+}
+#LoginForm{
+    margin-top: 20%;
+    position:relative;
+    margin-top: -25%;
+    width: 100%;
+    height: 100%;
+    padding-top: 350px;
+    padding-right: 100px;
+}
+.LoginFormBox{
+    width: 400px;
+    height: 300px;
+    padding-top: 65px;
+    padding-right: 100px;
+    margin-left: 10%;
+    margin-top: -10%;
+    z-index: 99;
+}
+#LoginRegisterForm{
+    margin-top: 20%;
+    position: absolute;
+    margin-top: -25%;
+    width: 100%;
+    height: 100%;
+    padding-top: 350px;
+    padding-right: 100px;
+}
+.LoginRegisterFormBox{
+    width: 400px;
+    height: 300px;
+    padding-top: 65px;
+    padding-right: 100px;
+    margin-left: 70%;
+    margin-top: -10%;
+    z-index: 99;
+}
+/* Approval.vue */
+#ApprovalBg{
+    background:url(../components/img/LoginBg2.jpg);
+    background-size: 100%;
+    height: 803px;
+}
